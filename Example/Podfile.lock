@@ -1,0 +1,16 @@
+PODS:
+  - sgertrud2021 (0.1.0)
+
+DEPENDENCIES:
+  - sgertrud2021 (from `../`)
+
+EXTERNAL SOURCES:
+  sgertrud2021:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  sgertrud2021: fb242a920e86ce01302aad7036253a093d1ecd19
+
+PODFILE CHECKSUM: 09a89313fa591b51ba844c448d8dbbee17ddfbd8
+
+COCOAPODS: 1.11.0
