@@ -37,7 +37,7 @@ public class ArticleManager {
         article.content = content
         article.image = image?.pngData()
         article.creationDate = Date()
-        article.modificationDate = Date()
+        article.modificationDate = article.creationDate
         article.language = Locale.current.languageCode
         return article
     }
