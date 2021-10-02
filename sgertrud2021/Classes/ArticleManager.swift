@@ -46,7 +46,7 @@ public class ArticleManager {
 
     public func getAllArticles() -> [Article] {
         let request: NSFetchRequest<Article> = Article.fetchRequest()
-        request.sortDescriptors = [NSSortDescriptor(key: "modificationDate", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "modificationDate", ascending: false)]
         var articles: [Article] = []
         do {
             try articles.append(contentsOf: context.fetch(request))
@@ -59,7 +59,7 @@ public class ArticleManager {
     public func getArticles(withLang lang: String) -> [Article] {
         let request: NSFetchRequest<Article> = Article.fetchRequest()
         request.predicate = NSPredicate(format: "language = %@", lang)
-        request.sortDescriptors = [NSSortDescriptor(key: "modificationDate", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "modificationDate", ascending: false)]
         var articles: [Article] = []
         do {
             try articles.append(contentsOf: context.fetch(request))
@@ -72,7 +72,7 @@ public class ArticleManager {
     public func getArticles(containString str: String) -> [Article] {
         let request: NSFetchRequest<Article> = Article.fetchRequest()
         request.predicate = NSPredicate(format: "(title CONTAINS[cd] %@) OR (content CONTAINS[cd] %@)", str, str)
-        request.sortDescriptors = [NSSortDescriptor(key: "modificationDate", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "modificationDate", ascending: false)]
         var articles: [Article] = []
         do {
             try articles.append(contentsOf: context.fetch(request))
