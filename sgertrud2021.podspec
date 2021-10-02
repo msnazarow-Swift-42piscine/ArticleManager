@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name             = 'sgertrud2021'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'msnazarow' => 'msnazarow@gmail.com' }
   s.summary          = 'ArticleManager for keep your notes in percistense'
   s.description      = <<-DESC
   This is my first cocoapod maked for School21, bound up with PersonalDiary project
-  I insert some NSPersistentContainer extention to solve bundle issue
+  I insert some NSPersistentContainer extention to solve bundle issue and also StringInterpolation extention to print Date
   So the main goal of the pod is to make your articles persistes and incapusale work with Coredata
                        DESC
   s.homepage         = 'https://github.com/msnazarow/sgertrud2021'
