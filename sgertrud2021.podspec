@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'sgertrud2021'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'msnazarow' => 'msnazarow@gmail.com' }
   s.summary          = 'ArticleManager for keep your notes in percistense'
