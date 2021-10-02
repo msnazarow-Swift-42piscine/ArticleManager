@@ -19,6 +19,7 @@ extension Article {
     @NSManaged public var title: String?
     @NSManaged public var content: String?
     @NSManaged public var language: String?
+    ///Jpeg data
     @NSManaged public var image: Data?
     @NSManaged public var creationDate: Date?
     @NSManaged public var modificationDate: Date?

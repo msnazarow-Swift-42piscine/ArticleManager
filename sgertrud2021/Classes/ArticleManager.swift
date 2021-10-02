@@ -19,7 +19,9 @@ public class ArticleManager {
 
     private lazy var context = persistentContainer.viewContext
 
-    public init() {}
+    public static let shared = ArticleManager()
+
+    private init() {}
 
     public func save () {
         let context = persistentContainer.viewContext
@@ -35,7 +37,7 @@ public class ArticleManager {
         let article = Article(context: context)
         article.title = title
         article.content = content
-        article.image = image?.pngData()
+        article.image = image?.jpegData(compressionQuality: 1)
         article.creationDate = Date()
         article.modificationDate = article.creationDate
         article.language = Locale.current.languageCode
