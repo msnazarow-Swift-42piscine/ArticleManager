@@ -23,4 +23,16 @@ extension Article {
     @NSManaged public var creationDate: Date?
     @NSManaged public var modificationDate: Date?
 
+    public override var description: String {
+        """
+
+        title: "\(title ?? "not initialized")"
+        content: "\(content ?? "not initialized")"
+        language: "\(language ?? "not initialized")"
+        image: "\(image?.description ?? "not initialized")"
+        creationDate: "\(creationDate?.description ?? "not initialized")"
+        modificationDate: "\(modificationDate?.description ?? "not initialized")"
+
+        """
+    }
 }

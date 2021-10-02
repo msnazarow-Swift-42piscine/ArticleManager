@@ -30,6 +30,12 @@ class TestPresenter: ViewToPresenterTestProtocol {
 
     func viewDidLoad(){
         let manager = ArticleManager()
+        manager.newArticle(title: "Hello Dolly", content: "I am the cleverst sheep in the world")
+        manager.newArticle(title: "Hello Bully", content: "Never never let you go")
+        manager.newArticle(title: "Goodbay Dolly", content: "Goodbuy my love goodbye")
+        manager.newArticle(title: "Goodbay Bully", content: "I ain't gonna be just a face in the crowd")
+        manager.save()
+        print(manager.getAllArticles())
     }
 }
 
