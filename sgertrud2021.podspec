@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/msnazarow/sgertrud2021.git', :tag => s.version.to_s }
   s.swift_version = '5.0'
   s.ios.deployment_target = '12.0'
-  s.ios.source_files = 'sgertrud2021/Classes/**/*'
+  s.ios.source_files = ['sgertrud2021/Classes/**/*.swift', 'sgertrud2021/Extentions/**/*.swift']
   s.resources = "sgertrud2021/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,xcdatamodeld}"
   s.resource_bundles = { 'sgertrud2021' => ['sgertrud2021/Assets/*.xcdatamodeld']}
   s.frameworks = 'UIKit', 'CoreData'

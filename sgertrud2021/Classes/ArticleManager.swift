@@ -9,7 +9,7 @@ import CoreData
 
 public class ArticleManager {
     private lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "article",bundle: Bundle(for: type(of: self)))
+        let container = NSPersistentContainer(name: "article", bundle: Bundle(for: type(of: self)))
         container.loadPersistentStores { _ , error in
             guard let error = error else { return }
             fatalError("Unresolved error \(error), \(error.localizedDescription)")
