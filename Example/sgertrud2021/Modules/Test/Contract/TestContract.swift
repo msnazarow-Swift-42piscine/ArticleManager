@@ -24,7 +24,7 @@ protocol ViewToPresenterTestProtocol: AnyObject {
 
 // MARK: Interactor Input (Presenter -> Interactor)
 protocol PresenterToInteractorTestProtocol: AnyObject {
-
+    func getExample()
 }
 
 // MARK: Presenter Output (Presenter -> Router)

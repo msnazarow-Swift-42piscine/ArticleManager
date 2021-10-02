@@ -26,13 +26,12 @@ extension Article {
     public override var description: String {
         """
 
-        title: "\(title ?? "not initialized")"
+        ================title: "\(title ?? "not initialized")"================
         content: "\(content ?? "not initialized")"
-        language: "\(language ?? "not initialized")"
+        language: "\(language!)"
         image: "\(image?.description ?? "not initialized")"
-        creationDate: "\(creationDate?.description ?? "not initialized")"
-        modificationDate: "\(modificationDate?.description ?? "not initialized")"
-
+        creationDate: "\(creationDate!)"
+        modificationDate: "\(modificationDate!)"
         """
     }
 }
