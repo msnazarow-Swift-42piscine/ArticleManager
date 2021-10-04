@@ -475,11 +475,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-sgertrud2021_Example/Pods-sgertrud2021_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/sgertrud2021/sgertrud2021.framework",
+				"${BUILT_PRODUCTS_DIR}/sgertrud2021/ArticleManager.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sgertrud2021.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArticleManager.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

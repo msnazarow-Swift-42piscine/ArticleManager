@@ -1,5 +1,5 @@
 import XCTest
-import sgertrud2021
+import ArticleManager
 
 class Tests: XCTestCase {
     

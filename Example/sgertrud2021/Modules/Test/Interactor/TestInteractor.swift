@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import sgertrud2021
+import ArticleManager
 
 class TestInteractor: PresenterToInteractorTestProtocol {
-    let manager = ArticleManager()
+    let manager = ArticleManager.shared
 
     func getExample() {
         manager.newArticle(title: "Hello Dolly", content: "I am the cleverst sheep in the world")

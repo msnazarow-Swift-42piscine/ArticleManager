@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import sgertrud2021
 
 class TestPresenter: ViewToPresenterTestProtocol {
 
